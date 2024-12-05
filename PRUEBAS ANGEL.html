@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="C:\Users\Tame\Desktop\PRUEBAS ANGEL.css">
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            // Si la sección está visible, la ocultamos, si está oculta, la mostramos
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+
+        <img src="C:\Users\Tame\Desktop\1 PAGINA WEB\IMAGENES\CUSTOMMERCH.jpg" width="200" height="200" alt="LOGOTIPO">
+        <nav>
+            <ul>
+                <li><a href="#textil">Textil</a></li>
+                <li><a href="#vasos-y-tazas">Vasos y Tazas</a></li>
+                <li><a href="#pegatinas">Pegatinas</a></li>
+                <li><a href="#lienzos">Lienzos</a></li>
+                <li><a href="#personalizacion">Personalización</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Convierte tu idea en realidad,con personalizaciones CUSTOMMERCH!!!!</h1>
+
+    <!-- Sección de Textil -->
+    <section id="textil">
+        <h2>Textil</h2>
+        <p>Camisetas, Sudaderas, Chaquetas, Pantalones, Bodys, Pechitos, Delantales.</p>
+        <div class="subcategorias">
+            <button class="boton-nav" onclick="toggleSection('camisetas')">Camisetas</button>
+            <button class="boton-nav" onclick="toggleSection('sudaderas')">Sudaderas</button>
+            <button class="boton-nav" onclick="toggleSection('chaquetas')">Chaquetas</button>
+            <button class="boton-nav" onclick="toggleSection('pantalones')">Pantalones</button>
+            <button class="boton-nav" onclick="toggleSection('bodys')">Bodys</button>
+            <button class="boton-nav" onclick="toggleSection('pechitos')">Pechitos</button>
+            <button class="boton-nav" onclick="toggleSection('delantales')">Delantales</button>
+        </div>
+    </section>
+
+    <!-- Sección de Vasos y Tazas -->
+    <section id="vasos-y-tazas">
+        <h2>Vasos y Tazas</h2>
+        <p>Diversos modelos personalizados a tu gusto.</p>
+        <div class="subcategorias">
+            <button class="boton-nav" onclick="toggleSection('vasos')">Vasos</button>
+            <button class="boton-nav" onclick="toggleSection('tazas')">Tazas</button>
+        </div>
+    </section>
+
+    <!-- Sección de Pegatinas -->
+    <section id="pegatinas">
+        <h2>Pegatinas</h2>
+        <p>Pegatinas personalizables de alta calidad para diferentes superficies.</p>
+        <button class="boton-nav" onclick="toggleSection('pegatinas-modelo1')">Modelo 1</button>
+        <button class="boton-nav" onclick="toggleSection('pegatinas-modelo2')">Modelo 2</button>
+    </section>
+
+    <!-- Sección de Lienzos -->
+    <section id="lienzos">
+        <h2>Lienzos</h2>
+        <p>Lienzos personalizados para decorar tus espacios con estilo.</p>
+        <button class="boton-nav" onclick="toggleSection('lienzos')">Lienzos Variados</button>
+    </section>
+
+    <!-- Sección de Personalización -->
+    <section id="personalizacion">
+        <h2>Personalización</h2>
+        <p>Transforma tus ideas en productos únicos. Ofrecemos servicios de personalización para todos los artículos.</p>
+        <button class="boton-nav" onclick="toggleSection('personalizacion')">Personalización de Artículos</button>
+    </section>
+
+    <!-- Información de las subcategorías de Textil -->
+    <section id="camisetas" style="display: none;">
+        <h3>Camisetas</h3>
+        <p>Colores disponibles: Blanco, Negro, Rojo, Azul, Verde</p>
+        <p>Tallas: S, M, L, XL</p>
+        <img src="path/to/camisetas.jpg" alt="Camisetas" width="300">
+    </section>
+
+    <section id="sudaderas" style="display: none;">
+        <h3>Sudaderas</h3>
+        <p>Colores disponibles: Gris, Negro, Azul, Rojo</p>
+        <p>Tallas: S, M, L, XL</p>
+        <img src="path/to/sudaderas.jpg" alt="Sudaderas" width="300">
+    </section>
+
+    <section id="chaquetas" style="display: none;">
+        <h3>Chaquetas</h3>
+        <p>Colores disponibles: Negro, Gris, Azul</p>
+        <p>Tallas: M, L, XL</p>
+        <img src="path/to/chaquetas.jpg" alt="Chaquetas" width="300">
+    </section>
+
+    <section id="pantalones" style="display: none;">
+        <h3>Pantalones</h3>
+        <p>Colores disponibles: Azul, Negro, Gris</p>
+        <p>Tallas: S, M, L, XL</p>
+        <img src="path/to/pantalones.jpg" alt="Pantalones" width="300">
+    </section>
+
+    <section id="bodys" style="display: none;">
+        <h3>Bodys</h3>
+        <p>Colores disponibles: Blanco, Negro, Rosa</p>
+        <p>Tallas: S, M, L</p>
+        <img src="path/to/bodys.jpg" alt="Bodys" width="300">
+    </section>
+
+    <section id="pechitos" style="display: none;">
+        <h3>Pechitos</h3>
+        <p>Colores disponibles: Azul, Blanco, Rosa</p>
+        <p>Tallas: S, M, L</p>
+        <img src="path/to/pechitos.jpg" alt="Pechitos" width="300">
+    </section>
+
+    <section id="delantales" style="display: none;">
+        <h3>Delantales</h3>
+        <p>Colores disponibles: Rojo, Blanco, Negro</p>
+        <p>Tallas: Única</p>
+        <img src="path/to/delantales.jpg" alt="Delantales" width="300">
+    </section>
+
+    <!-- Información de las subcategorías de Vasos y Tazas -->
+    <section id="vasos" style="display: none;">
+        <h3>Vasos</h3>
+        <p>Colores disponibles: Blanco, Transparente, Negro</p>
+        <p>Tamaños: Pequeño, Mediano, Grande</p>
+        <img src="path/to/vasos.jpg" alt="Vasos" width="300">
+    </section>
+
+    <section id="tazas" style="display: none;">
+        <h3>Tazas</h3>
+        <p>Colores disponibles: Blanco, Rojo, Azul</p>
+        <p>Tamaños: Pequeña, Grande</p>
+        <img src="path/to/tazas.jpg" alt="Tazas" width="300">
+    </section>
+
+    <!-- Información de Pegatinas -->
+    <section id="pegatinas-modelo1" style="display: none;">
+        <h3>Pegatinas Modelo 1</h3>
+        <p>Diseños disponibles: 3D, Metalizadas, Personalizadas</p>
+        <img src="path/to/pegatinas_modelo1.jpg" alt="Pegatinas Modelo 1" width="300">
+    </section>
+
+    <section id="pegatinas-modelo2" style="display: none;">
+        <h3>Pegatinas Modelo 2</h3>
+        <p>Diseños disponibles: Estampados, Transparentes</p>
+        <img src="path/to/pegatinas_modelo2.jpg" alt="Pegatinas Modelo 2" width="300">
+    </section>
+
+    <!-- Información de Lienzos -->
+    <section id="lienzos" style="display: none;">
+        <h3>Lienzos Variados</h3>
+        <p>Colores disponibles: Blanco, Gris</p>
+        <p>Tamaños: Pequeño, Mediano, Grande</p>
+        <img src="path/to/lienzos.jpg" alt="Lienzos" width="300">
+    </section>
+
+    <!-- Información de Personalización -->
+    <section id="personalizacion" style="display: none;">
+        <h3>Personalización de Artículos</h3>
+        <p>Personaliza tus productos con nombre, diseño, logo, etc.</p>
+        <img src="path/to/personalizacion.jpg" alt="Personalización" width="300">
+    </section>
+
+    <!-- Formulario centrado en la parte inferior -->
+    <section id="formulario-contacto">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="20">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número">
+            <label for="email">Correo Electrónico:</label>
+			<input type="text" id="consulta" name="consulta" placeholder="Escribe tu consulta o pedidos">
+            <label for="textarea">Consultas o pedidos:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+           
+        </ul>
+    </footer>
+</body>
+</html>
